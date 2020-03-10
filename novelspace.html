@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Kagayori</title>
+    <!-- add missing code here: favicon -->  
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <!-- CSS -->  
+    <style type="text/css">
+
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        color: white;
+      }
+
+      /* td, th and ul currently not used in this page */
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      h1, h2, ul{
+        color: white;
+      }
+      tr:nth-child(even) {
+        background: rgba(135, 206, 235,0.5);
+      }
+      img.bg {
+        /* Set rules to fill background */
+        min-height: 100%;
+        min-width: 1024px;
+        
+        /* Set up proportionate scaling */
+        width: 100%;
+        height: auto;
+        
+        /* Set up positioning */
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      @media screen and (max-width: 720px) { /* Specific to this particular image */
+        img.bg {
+          left: 50%;
+          margin-left: -512px;   /* 50% */
+        }
+      }
+      .table1 {
+      background: rgba(0,0,0,0.5);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <img src="/img/bg/afternoon_with_kaga_1200x700.jpg" class="bg" style="z-index:-1;">
+    <a href="https://kagayori.github.io" style="text-decoration: none"><img src='/img/icons/paw.png' style="width:110px;height:110px;" onmouseover="this.src='/img/icons/paw_highlighted.png';" onmouseout="this.src='/img/icons/paw.png';"/></a>
+    <a href="novelspace.html" style="text-decoration: none"><img src='/img/icons/lib.png' style="width:110px;height:110px;" onmouseover="this.src='/img/icons/lib_highlighted.png';" onmouseout="this.src='/img/icons/lib.png';"/>
+    <a href="library.html" style="text-decoration: none"><img src='/img/icons/disc.png' style="width:110px;height:110px;" onmouseover="this.src='/img/icons/disc_highlighted.png';" onmouseout="this.src='/img/icons/disc.png';"/>
+    
+    <!-- make labels of PAGES into clickable links -->
+    <h1>[PAGES]</h1>
+      <h2>Cats</h2>
+      <h2>PC Hardware</h2>
+      <h2>Favorite Foods w/ Recipes</h2>
+    
+  </body>
+</html>

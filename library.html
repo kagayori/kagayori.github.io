@@ -40,7 +40,7 @@
         top: 0;
         left: 0;
       }
-      @media screen and (max-width: 1024px) { /* Specific to this particular image */
+      @media screen and (max-width: 720px) { /* Specific to this particular image */
         img.bg {
           left: 50%;
           margin-left: -512px;   /* 50% */
@@ -54,175 +54,91 @@
   </head>
   <body>
     <img src="/img/bg/afternoon_with_kaga_1200x700.jpg" class="bg" style="z-index:-1;">
-    <a href="https://kagayori.github.io" style="text-decoration: none"><img src='/img/icons/paw.png' style="width:110px;height:110px;" onmouseover="this.src='/img/icons/paw_highlighted.png';" onmouseout="this.src='/img/icons/home.png';"/></a>
+    <a href="https://kagayori.github.io" style="text-decoration: none"><img src='/img/icons/paw.png' style="width:110px;height:110px;" onmouseover="this.src='/img/icons/paw_highlighted.png';" onmouseout="this.src='/img/icons/paw.png';"/></a>
     <a href="novelspace.html" style="text-decoration: none"><img src='/img/icons/lib.png' style="width:110px;height:110px;" onmouseover="this.src='/img/icons/lib_highlighted.png';" onmouseout="this.src='/img/icons/lib.png';"/>
     <a href="library.html" style="text-decoration: none"><img src='/img/icons/disc.png' style="width:110px;height:110px;" onmouseover="this.src='/img/icons/disc_highlighted.png';" onmouseout="this.src='/img/icons/disc.png';"/>
     
-    <h1>KC Guide</h1>
-    <h2>Legend:</h2>
-    <ul>
-      <li>B = bucket</li>
-      <li>DM = development material</li>
-      <li>IC = instant construction</li>
-      <li>S = screw</li>
-      <li>Fbox = furniture box</li>
-    </ul>
-
-   
-    <h2>Fleet Presets</h2>
-    <table class='table1'>
-      <tr>
-        <th>#</th>
-        <th>S1</th>
-        <th>S2</th>
-        <th>S3</th>
-        <th>S4</th>
-        <th>S5</th>
-        <th>S6</th>
-        <th>FA</th>
-        <th>Obj.</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Isuzu</td>
-        <td>Shigure</td>
-        <td>Hibiki</td>
-        <td>Yuudaichi</td>
-        <td></td>
-        <td></td>
-        <td>1</td>
-        <td>W1-5</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Richelieu</td>
-        <td>Yamashiro</td>
-        <td>Ise</td>
-        <td>Suzuya</td>
-        <td>Atago</td>
-        <td>Kumano</td>
-        <td>1</td>
-        <td>W2-5</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Zara</td>
-        <td>Kaga</td>
-        <td>Maya</td>
-        <td>Akagi</td>
-        <td>Choukai</td>
-        <td>Souryuu</td>
-        <td>1</td>
-        <td>W3-5</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Ishigaki</td>
-        <td>Hachijou</td>
-        <td>Etorofu</td>
-        <td>Hiburi</td>
-        <td></td>
-        <td></td>
-        <td>2</td>
-        <td>Exped. #2(Bucket Hunt)</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Arashio</td>
-        <td>Akitsushima</td>
-        <td>Houshou</td>
-        <td>Ooshio</td>
-        <td>Sado</td>
-        <td>Matsuwa</td>
-        <td>3</td>
-        <td>Exped. #15(Bauxite Hunt)</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Kinu</td>
-        <td>Kamikaze</td>
-        <td>Shiratsuyu</td>
-        <td>Hatsuharu</td>
-        <td>Asashio</td>
-        <td>U-511</td>
-        <td>4</td>
-        <td>Exped. #13(Ammo Hunt)</td>
-      </tr>
-    </table>
-
-    <h2>Daily Quests</h2>
-    <table class='table1'>
-      <tr>
-        <th>#</th>
-        <th>Req.</th>
-        <th>Res.</th>
-        <th>Rew.</th>
-        <th>Nxt.</th>
-      </tr>
-      <tr>
-        <td>F5</td>
-        <td>Craft a piece of equipment</td>
-        <td>40 / 40 / 40 / 40</td>
-        <td>1x IC, 1x DM</td>
-        <td>+F6</td>
-      </tr>
-      <tr>
-        <td>F6</td>
-        <td>Craft a ship</td>
-        <td>50 / 50 / 50 / 50</td>
-        <td>1x B, 1x DM</td>
-        <td>+F7</td>
-      </tr>
-      <tr>
-        <td>F7</td>
-        <td>Craft 3 pieces of equipment</td>
-        <td>100 / 100 / 100 / 100</td>
-        <td>2x DM</td>
-        <td>+F8, +F51</td>
-      </tr>
-      <tr>
-        <td>F8</td>
-        <td>Craft 3 ships</td>
-        <td>200 / 200 / 300 / 100</td>
-        <td>1x IC, 2x DM</td>
-        <td>+F9, +F16, +F18</td>
-      </tr>
-      <tr>
-        <td>F9</td>
-        <td> Scrap 2 ships</td>
-        <td>0 / 0 / 0 / 50</td>
-        <td>1x B</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>F18</td>
-        <td>Do equipment modernization 1 time</td>
-        <td>0 / 50 / 0 / 0</td>
-        <td>1x S</td>
-        <td>+F34, +F50</td>
-      </tr>
-      <tr>
-        <td>Bd1</td>
-        <td>Defeat an enemy fleet</td>
-        <td>50 / 50 / 0 / 0</td>
-        <td>1x DM</td>
-        <td>+Bd2, +Bd4, +Bd6, +A54, +A68(?), +A72(?)</td>
-      </tr>
-      <tr>
-        <td>Bd2</td>
-        <td>Complete a battle</td>
-        <td>50 / 50 / 50 / 50</td>
-        <td>1x B 1x DM</td>
-        <td>+Bd3, +Bd5, +Bw1, +Bw3, +A58(?), +A66, +A67, +B48, +B63, +C8, +C9, +F31</td>
-      </tr> 
-      <tr>
-        <td>Bd5</td>
-        <td>Sink 3 enemy Transport Ships (W2-1)</td>
-        <td>100 / 50 / 200 / 50</td>
-        <td>1x B 1x DM</td>
-        <td>+Bd7, +Bw2, +C13</td>
-      </tr> 
-    </table>
-
+    <h1>[BOOKMARKS]</h1>
+    <h2>Quick Links</h2>
+      <ul>
+        <li><a href="https://www.deviantart.com">DeviantArt</a></li>
+        <li><a href="https://console.firebase.google.com">Firebase</a></li>
+        <li><a href="https://github.com">Github</a></li>
+        <li><a href="https://mail.google.com/">Gmail</a></li> 
+        <li><a href="https://drive.google.com/">Google Drive</a></li>
+        <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
+        <li><a href="https://www.youtube.com">Youtube</a></li>
+      </ul>
+    <h2>Arbitrary Installer List</h2>
+    <h3>Software</h3>
+      <table class='table1'>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>URL</th>
+          <th>Last Downloaded Ver.</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>a</td>
+          <td>b</td>
+          <td>c</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>d</td>
+          <td>e</td>
+          <td>f</td>
+        </tr>
+      </table>
+    <h3>Drivers</h3>
+    <h3>Desktop PC</h3>
+    <h4>Ryzen 3 2200G</h4>
+    <h4>Asrock</h4>
+    <h4>RAM</h4>
+    <h4>HDD</h4>
+    <h3>Laptop</h3>
+    <h4>B490</h4>
+      <table class='table1'>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>URL</th>
+          <th>Last Downloaded Ver.</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>g</td>
+          <td>h</td>
+          <td>i</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>j</td>
+          <td>k</td>
+          <td>l</td>
+        </tr>
+      </table>
+      <h4>Dell Inspiron</h4>
+      <table class='table1'>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>URL</th>
+          <th>Last Downloaded Ver.</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>m</td>
+          <td>n</td>
+          <td>o</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>p</td>
+          <td>q</td>
+          <td>r</td>
+        </tr>
+      </table>
   </body>
 </html>
